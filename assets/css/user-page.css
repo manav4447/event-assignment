@@ -1,0 +1,50 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	
+	font-weight: 300;
+}
+
+
+.images{
+    height:100vh;
+    opacity: 0.8;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0px;
+    position: relative;
+   
+}
+.display-container{
+
+    width: 20%;
+    height: 70%;
+    padding: 10px;
+    border: 1px solid white;
+    background-color: lightblue;
+    opacity: 0.5;
+    margin-top: -40%;
+    margin-left: 60%;
+    position: absolute;
+    justify-content: center;
+
+}
+label{
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    color: whitesmoke;
+    font-weight: 400;
+}
+.event-content{
+    font-size: 30px;
+    align-items: center;
+    display: flex;
+    margin-top: 5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: 5%;
+    
+    /* justify-items: space-between; */
+}

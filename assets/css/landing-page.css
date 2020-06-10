@@ -1,0 +1,65 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	
+	font-weight: 300;
+}
+#event-container{
+    width: 20%;
+    height: 70%;
+    padding: 10px;
+    border: 1px solid white;
+    background-color: lightblue;
+    opacity: 0.5;
+    margin-top: -40%;
+    margin-left: 60%;
+    position: absolute;
+       
+}
+.images{
+    height:100vh;
+    opacity: 0.8;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0px;
+    position: relative;
+   
+}
+.selectpicker{
+    height: 30px;
+    width: 95%;
+}
+
+h1 {
+    margin: auto;
+	font-size: 44px;
+	font-weight: 500;
+	background: linear-gradient(to right, #494964, #6f6f89);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+label{
+    color: white;
+    font-size: 20px;
+    align-items: center;
+}
+input {
+    height: 30px;
+    width: 95%;
+    margin-top: 5px;
+}
+button {
+    width: 200px;
+    height: 50px;
+    display: block;
+    margin: 30px auto;
+    font-family: monospace;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+button:hover {
+    box-shadow: 0px 0px 30px 2px grey;
+}
