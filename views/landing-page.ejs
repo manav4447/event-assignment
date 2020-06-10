@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>
+            <%= title%>
+        </title>
+        <link rel="stylesheet" type="text/css" href="/css/landing-page.css">
+        <link 
+        rel="stylesheet"
+        href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" 
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" 
+        crossorigin="anonymous">
+    </head>
+        <body>
+        <h1><a href="/user-events">Go to User Page</a></h1>
+        <!-- <h1><a href="/event-upload">See the uploaded event</a></h1> -->
+        <h1><a href="/admin-events">All events</a></h1>
+        <img src="/images/sdsf.jpg">
+        <div id="event-container">
+            <h1>
+                <i class="fa fa-user" aria-hidden="true"></i>    Admin
+            </h1>
+        <form id="new-event-form" action="/events-create" method="POST">
+            <label for="name">Name of Events</label><br>
+            <input type="text" id="name" placeholder="Type your event name here..." name="name" required><br>
+            <label for="category">Event Category</label>
+            <select class="selectpicker"  name="selectpicker" required>
+                <optgroup label="Select Category">
+                        <option name="Seminar" value="Seminar">Seminar </option>
+                        <option name="Blood donation" value="Blood Donation">Blood Donation</option>
+                        <option name="Webinar" value="Webinar">Webinar</option>
+                        <option name="General-society-meet" value="General-society-meet">General-society-meet</option>
+                </optgroup>
+            </select>      <br>
+
+            <label for="description">Event Description</label> <br>
+                     <textarea id="description" cols = "30" rows="3" name="description" placeholder="Enter the description here" required></textarea>
+            
+            
+            <label for="time">Date&Time</label><br>
+
+                     <input type="time" id="time" name="time" required><br>
+
+            <label for="event-location">
+                Event Location
+            </label><br>
+             <input type="text" id="event-location" name="location" placeholder="Enter Event Loaction here" required>
+             <br>
+
+             <button  type="submit" >Submit </button>
+     </form>
+        </div>
+    </body>
+
+</html>

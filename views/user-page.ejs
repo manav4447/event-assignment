@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/css/user-page.css">
+        <link 
+        rel="stylesheet"
+        href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" 
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" 
+        crossorigin="anonymous">
+        <title>
+            User
+        </title>
+        
+    </head>
+    <body><h1>
+        EVENTS for User
+    </h1>
+        <% for(let i of event) { %>
+        <img src="/images/sdsf.jpg">
+    <div class="display-container"><h1>
+        <i class="fa fa-users" aria-hidden="true"></i>    User
+    </h1>
+        <label >Name of the event:</label>
+     <div class="event-content">   <%= i.name%></div>
+     <label class=""> Description</label>
+     <div class="event-content">   <%= i.description%></div>
+    <label >category</label>
+    <div class="event-content">   <%= i.category%></div>
+    <label>Time    </label>
+    <div class="event-content">   <%= i.time%></div>
+    <label >Location</label>
+    <div class="event-content">   <%= i.location%></div>
+    </label>
+    </div>
+    <% } %>
+    </body>
+</html>
